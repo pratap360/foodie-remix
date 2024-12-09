@@ -4,12 +4,12 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 
-export default function RecipeForm({ onSubmit }) {
+export default function RecipeForm({ onSubmit }: { onSubmit: (data: { ingredients: string; preferences: string }) => void }) {
   const [ingredients, setIngredients] = React.useState('');
   const [preferences, setPreferences] = React.useState('');
   const [isLoading, setIsLoading] = React.useState(false);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     setIsLoading(true);
     await onSubmit({ ingredients, preferences });

@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 // lib/gemini.ts
 import { GoogleGenerativeAI } from '@google/generative-ai';
 

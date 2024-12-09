@@ -13,7 +13,7 @@ export default function Header() {
             <Link href="/about" className="hover:text-gray-300">
             About
           </Link>
-            <li><Link href="https://github.com/pratap360/" target="_blank">Github</Link></li>
+            <li><Link href="https://github.com/pratap360/foodie-remix" target="_blank">Github</Link></li>
           </ul>
         </nav>
       </div>
